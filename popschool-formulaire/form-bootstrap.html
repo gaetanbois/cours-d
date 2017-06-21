@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> hey </title>
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/form-css.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- <div class="container">
+        <div class="rox">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            colonne 1
+          </div>
+        </div>
+        <div class="rox">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            colonne 2
+          </div>
+        </div>
+        <div class="rox">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            colonne 3
+          </div>
+        </div>
+        <div class="rox">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            colonne 4
+          </div>
+        </div>
+    </div> -->
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" name="token" value=""/>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="form-group">
+          <label for="firstname">Prénom</label>
+          <input type="text" class="form-control" id="firstname" name="Firstname" value="" placeholder="prénom" required/>
+        </div>
+      </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for="lastname">Nom</label>
+        <input type="text" class="form-control" id="lastname" name="Lastname" value="" placeholder="nom" required/>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for"birthday"> Date de naissance</label>
+        <input type="date" class="form-control" id="birthday" name="birthday" placeholder="JJ/MM/AAAA" value="21/06/2017" readonly/>
+      </div>
+    </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="form-group">
+        <label for="age">Âge</label>
+        <input type="number" class="form-control" id="age" name="age" value="" placeholder="Votre âge"  />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" value=""  placeholder="Votre email"/>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" class="form-control" id="passeword" name="password" value=""  placeholder="Votre mot de passe"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for="avatar">Avatar</label>
+        <input type="file" id="avatar" name="avatar" value=""  />
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for="files">Fichiers</label>
+        <input type="file" id="fichiers" name="files[]" value="" multiple />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="checkbox-inline">
+        <div>
+          <label>Mangez vous des fruits ?</label>
+        </div>
+        <div>
+          <label><input type="checkbox" id="fruit_1" name="fruits[]" value="1" /> Pomme</label><br />
+          <label><input type="checkbox" id="fruit_2" name="fruits[]" value="2" /> Poire</label><br />
+          <label><input type="checkbox" id="fruit_3" name="fruits[]" value="3" /> Pêche</label><br />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="radio-inline">
+          <div>
+            <label>Quel est votre légumes préféré ?</label>
+          </div>
+          <label><input type="radio" id="vegetable_0" name="vegetable" value="" />Aucun</label><br />
+          <label><input type="radio" id="vegetable_1" name="vegetable" value="1" />Concombre</label><br />
+          <label><input type="radio" id="vegetable_2" name="vegetable" value="2" />Tomate</label><br />
+          <label><input type="radio" id="vegetable_3" name="vegetable" value="3" />Topinambour</label><br />
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="radio-inline">
+            <label for="color">Quel est votre couleur préféré ?</label></br>
+            <select  id="color" name="color">
+            <option value="">Aucune</option>
+            <option value="1">Rouge</option>
+            <option value="2">Vert</option>
+            <option value="3">Bleu</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="checkbox-inline">
+          <div>
+          <label for="days">Quel sont vos jours préférées ?</label>
+          <select id="days" name="days[]" multiple size="5" >
+            <option value="1">Dimanche</option>
+            <option value="2">Lundi</option>
+            <option value="3">Mardi</option>
+            <option value="4">Mercredi</option>
+            <option value="5">Jeudi</option>
+            <option value="6">Vendredi</option>
+            <option value="7">Samedi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div>
+          <label for="who_are_you">Qui êtes vous ?</label>
+        </div>
+        <div>  <textarea class="form-controle" rows="3" id="who_are_you" name="who_are_you" >Je suis qui je suis</textarea>
+        </div>
+          <input type="submit" value="Valider" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    </form>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min."></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+#main {
+  color: navy;
+  font-family: "Times New Roman";
+  font-size: 34px;
+  line-height: 50px;
+  text-transform: capitalize ;
+}
+
+#main::first-letter {
+  color: red;
+  font-size: 200%;
+}
+
+#main::first-line{
+  color: pink;
+  font-weight: bold;
+}
+
+.raleway {
+  font-family: 'Dosis', sans-serif;
+}
+
+.sinkin_sans100_thin{
+  font-family: sinkin_sans100_thin, sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+a,
+a:visited {
+  color: gold;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a:hover,
+a:focus {
+  color: green;
+  text-decoration: underline;
+}
+
+ul a,
+ul a:visited {
+  color: blue;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ul a:focus,
+ul a:hover {
+  color: lightblue;
+    text-decoration: underline;
+}

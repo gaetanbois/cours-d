@@ -1,0 +1,39 @@
+.fixed {
+background-color: blue;
+position: fixed;
+top: 0px;
+left: 0px;
+height: 200px;
+width: 100%;
+z-index: 1000;
+}
+
+.placeholder {
+  height: 200px;
+  width: 100%;
+}
+
+.vertical-align {
+  vertical-align: middle;
+}
+
+.vertical-center {
+  left: 0px;
+  top: 11px;
+  position: relative;
+}
+
+.rectangle {
+  background-color: pink;
+  height: 200px;
+  position: relative;
+  width: 300px;
+}
+
+.rectangle p {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+margin: 0px;
+}

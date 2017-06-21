@@ -1,0 +1,21 @@
+.container {
+  background-color: black;
+}
+.col-sm-12 {
+  background-color: blue;
+  padding-bottom: 30px;
+}
+.col-sm-6 {
+  background-color: pink;
+  padding-bottom: 30px;
+}
+.col-sm-4 {
+  background-color: grey;
+  padding-bottom: 30px;
+}
+.row {
+padding-bottom: 30px;
+}
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+.container-fluid{
+
+}
+#logo{
+  text-align: center;
+}
+.gauche{
+  text-align: left;
+}
+.picture{
+  text-align: center;
+}
+.p2{
+  line-height: 200%;
+  color: black;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+img {
+  width: 600px;
+}
+header {
+  color: red;
+}
+h1 {
+  text-align: center;
+  color: orange;
+}
+h2 {
+  text-align: center;
+  color: red;
+}
