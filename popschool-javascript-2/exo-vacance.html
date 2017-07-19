@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html language="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/exo-vacances.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script type="text/javascript" src="js/exo-vacance.js"></script>
+
+    <!-- case a cocher -->
+    <!-- gaz eteint -->
+    <!-- electricite couper -->
+    <!-- fenetre fermées -->
+    <!-- j'ai pris la clé  -->
+    <!-- bouton de validation avec le label "puis-je partir en vacance ?" -->
+    <!-- une zone d'affichage de message  -->
+
+    <!-- element de code -->
+    <!-- une fonction qui est appelé par un bouton de validation -->
+    <!-- dans cette fonction il faudra developper les sections suivantes -->
+    <!-- recuperation des valeurs -->
+    <!-- affichage du message  -->
+
+    <!-- message  -->
+     <!-- "vous pouvez y aller" si toutes les cases sont cochées -->
+     <!-- "attendez, il reste des choses a faire" si au moins une des case n'est pas coché -->
+<div class="text-center txt">
+  <h1>Check List</h1>
+</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 checkedlist-item">
+        <label><input id="gaz" type="checkbox" name="choix1" value="1"> Gaz Eteint </label>
+        <label><input id="electricite" type="checkbox" name="choix2" value="2"> Electricite coupe</label>
+        <label><input id="fenetre" type="checkbox" name="choix3" value="3"> Fenetre Fermées</label>
+        <label><input id="cle" type="checkbox" name="choix4" value="4"> J'ai pris la clé</label>
+      </div>
+      <div class="col-sm-6">
+        <button onclick="check()" type="button">Check</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/exo-vacance.js"></script>
+  </body>
+</html>
