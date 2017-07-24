@@ -31,6 +31,13 @@ var data = [
 
 
 var html = "";
+var scores0 = data[0].points;
+var scores1 = data[1].points;
+var scores2 = data[2].points;
+
+var moyenne0 = [76, 64, 10, 67, 64].reduce((a, b)=> a + b,0) / 5;
+var moyenne1 = [42, 100, 54, 65, 32].reduce((a, b)=> a + b,0) / 5;
+var moyenne2 = [93, 2, 56, 78, 100].reduce((a, b)=> a + b,0) / 5;
 
 // 1er Tableau
 html = html + "<table class='table'><tr><th>ID</th><th>Name</th><th>Points</th></tr>"
@@ -41,9 +48,17 @@ html = html + "</table>";
 document.querySelector('#tabs').innerHTML = html;
 
 // 2ème tableau
-html = html + "<table class='table'><tr><th>Name</th><th>Scores Moyen</th></tr>"
+html = html + "<table class='table'><tr><th>Name</th><th>Scores</th><th>Scores Moyen</th></tr>"
+
 for (var i= 0; i < data.length; i++) {
-  html = html + "<tr><td>" + data[i].name + "</td><td>" + data[0].points + "</td><</tr>";
-}
+  html = html + "<tr><td>" + data[i].name + "</td><td>" + data[i].points + "</td></tr>";
+
+  for (var i = 0; i < data.points[i] ; i++) {
+    console.log(data.points);
+    // html = html + "<td>" + moyenne[0] + "</td>";
+    }
+ }
+
+
 html = html + "</table>";
 document.querySelector('#tabs').innerHTML = html;
