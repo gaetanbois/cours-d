@@ -30,13 +30,35 @@ $mots = ["Lumha", "Borlys", "Cylgam", "Sallomlig", "Lamerncalcylcel", "Nirthonor
 "hey", "Gumcelhallarnha", "Tholegcol", "Bursyllog", "Birculmar", "Lamnor" ,"Morsollam", "Urngum", "Calluglimirn", "Irnlusmorhical", "Mircylnirgomlem", "Lagcilarnsulthe", "Losnorsel", "Nircalhellsolmor", "Birhesolnarlim","Arnlagcollam","Borsilsyl", "Mermurlosornbor", "Lesthimor", "Gamhu", "Ernlamlys", "Cylmar", "Cylbur", "Helimtheirn", "Salgimbir",
 "Silsellosgym", "ho"];
 
-for ($i=0; $i < count($mots) ; $i++) {
-  echo $mots[$i];
+$data = [];
+
+for ($i=0; $i < 101; $i++) {
+  $array = [
+  "word" => $mots[rand(0, 49)],
+  "count" => rand(0, 10),
+  ];
+  $data[] = $array ;
+}
+
+foreach ($data as $key => $value) {
+  echo $value["word"];
+  echo "<br />";
+  echo $value["count"];
   echo "<br />";
 }
 
-$data = [];
+//création d'un tableau avec clé alphanumerique
+$data2 = [
+  "abc" => 123,
+  "def" => 456,
+  "ghi" => 789,
+];
 
-foreach ($mots as $word => $value) {
-  echo $value;
-}
+// ajout de données avec clé alphanumerique
+$data2["jkl"] = 123;
+
+//modification de données alphanumerique
+$data2["jkl"]= 42;
+
+// suppression de données avec une clé alphanumerique
+unset($data2 ["def"]);
