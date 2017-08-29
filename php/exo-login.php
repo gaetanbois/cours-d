@@ -30,7 +30,7 @@ if ($_POST) {
 }
 
 if ($login == "toto" && $password == "123") {
-  header("LOCATION: http://www.duckduckgo.com", true, 302);
+  header("LOCATION: array.php", true, 302);
 }
 elseif ($login == 'toto' && $password != '123') {
   $message = "Le login ou le mot de passe sont incorrect";
