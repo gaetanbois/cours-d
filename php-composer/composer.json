@@ -1,0 +1,7 @@
+{
+    "name": "www/php-composer",
+    "license": "UNLICENSED",
+    "require": {
+        "doctrine/dbal": "^2.5"
+    }
+}
