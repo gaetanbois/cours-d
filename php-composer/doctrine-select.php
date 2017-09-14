@@ -13,3 +13,4 @@ $connectionParams = array(
     'charset' => 'utf8mb4',
 );
 
+

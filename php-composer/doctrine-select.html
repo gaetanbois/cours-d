@@ -29,35 +29,36 @@ $stmt = $conn->query($sql);
 
 
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
 
 
-<html>
+    <html>
 
 
 
-<head>
+    <head>
 
 
 
-  <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
 
 
-  <title></title>
+        <title></title>
 
 
 
-</head>
+    </head>
 
 
 
-<body>
+    <body>
 
 
 
-nombre de lignes : <?= $stmt->rowCount() ?>
+        nombre de lignes :
+        <?= $stmt->rowCount() ?>
 
 
 
@@ -65,39 +66,39 @@ nombre de lignes : <?= $stmt->rowCount() ?>
 
 
 
-  <table>
+            <table>
 
 
 
-    <tr>
+                <tr>
 
 
 
-      <th>id</th>
+                    <th>id</th>
 
 
 
-      <th>titre</th>
+                    <th>titre</th>
 
 
 
-      <th>description</th>
+                    <th>description</th>
 
 
 
-      <th>limite</th>
+                    <th>limite</th>
 
 
 
-      <th>statut</th>
+                    <th>statut</th>
 
 
 
-    </tr>
+                </tr>
 
 
 
-<?php
+                <?php
 
 
 
@@ -145,12 +146,12 @@ while ($row = $stmt->fetch()) {
 
 
 
-  </table>
+            </table>
 
 
 
-</body>
+    </body>
 
 
 
-</html>
+    </html>
